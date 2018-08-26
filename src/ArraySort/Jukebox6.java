@@ -1,6 +1,5 @@
-package arraysort;
+package ArraySort;
 
-import java.net.URL;
 import java.util.*;
 import java.io.*;
 
@@ -30,7 +29,7 @@ public class Jukebox6
     
     void getSongs() {
         try {
-            String file = getClass().getClassLoader().getResource("arraysort/SongListMore.txt").getFile();
+            String file = getClass().getClassLoader().getResource("ArraySort/SongListMore.txt").getFile();
             BufferedReader reader = new BufferedReader(new FileReader(file));
             String line = null;
             while ((line = reader.readLine()) != null) {

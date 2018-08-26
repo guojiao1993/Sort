@@ -1,4 +1,4 @@
-package arraysort;
+package ArraySort;
 
 import java.io.BufferedReader;
 import java.io.FileReader;
@@ -28,7 +28,7 @@ public class Jukebox5 {
 
     void getSongs() {
         try {
-            String file = getClass().getClassLoader().getResource("arraysort/SongList.txt").getFile();
+            String file = getClass().getClassLoader().getResource("ArraySort/SongList.txt").getFile();
             BufferedReader reader = new BufferedReader(new FileReader(file));
             String line = null;
             while ((line = reader.readLine()) != null) {

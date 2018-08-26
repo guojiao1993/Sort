@@ -1,4 +1,4 @@
-package arraysort;
+package ArraySort;
 
 public class Song implements Comparable <Song>
 {

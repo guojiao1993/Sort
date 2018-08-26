@@ -1,3 +1,5 @@
+package SelectionSort;
+
 public class SelectionSort {
     public static void upSort(int[] a) {
         if (a == null || a.length == 0) {
