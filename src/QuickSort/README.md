@@ -44,6 +44,11 @@ public static void quickSort1(int[] array, int left, int right) {
 ### 两头交换写法
 这种写法的关键思想是前后双向遍历，找到不符合顺序的两个数据项，直接进行交换，这样减少了交换次数。
 
+手写代码加强记忆：  
+- 外层循环的判断条件是i <= j，终止循环后，必定存在i与j不交叉。
+- 内层循环中，前后遍历的条件不包括==，也不必判断i和j边界。
+- 在i <= j时，i要后移，j要前移。并且在i < j时，交换两者。
+- 循环终止后，left和j为小于基准值的无序区，i和right为大于基准值的无序区，需要再次递归排序。
 ```java
 public static void quickSort2(int[] array, int left, int right) {
     while (left >= right) {
